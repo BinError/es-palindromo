@@ -22,6 +22,7 @@ function agregar(){
             let nuevo = document.createElement("div")
             nuevo.innerHTML= `Es un palindromo ${formulario.value}`
             cuerpo.appendChild(nuevo)
+            cuerpo.lastChild.classList.add("col-6", "palindromo")
             cuerpo.lastChild.textContent = `${formulario.value} es un palindromo`
             
         } else {
@@ -29,6 +30,7 @@ function agregar(){
             let nuevo = document.createElement("div")
             nuevo.innerHTML= `Es un palindromo ${formulario.value}`
             cuerpo.appendChild(nuevo)
+            cuerpo.lastChild.classList.add("col-6", "noPalindromo")
             cuerpo.lastChild.textContent = `${formulario.value} NO NO NO ES PALINDROMO`
         }
 
