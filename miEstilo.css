@@ -1,0 +1,11 @@
+.active {
+    border:1px solid black;
+}
+
+.palindromo {
+    background-color: greenyellow;
+}
+
+.noPalindromo {
+    background-color: rgb(255, 193, 47);
+}
