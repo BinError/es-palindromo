@@ -1,5 +1,5 @@
 const formulario = document.getElementById("contenido")
-const cuerpo = document.getElementById("cuerpo")
+const cuerpo = document.getElementById("registro")
 
 
 function palindromo(palabra){
@@ -20,23 +20,27 @@ function agregar(){
         if(palindromo(formulario.value)){
             //console.log("ahora debo agregar un elemento con true")
             let nuevo = document.createElement("div")
-            nuevo.innerHTML= `Es un palindromo ${formulario.value}`
+            //nuevo.innerHTML= `Es un palindromo ${formulario.value}`
             cuerpo.appendChild(nuevo)
-            cuerpo.lastChild.classList.add("col-6", "palindromo")
+            cuerpo.lastChild.classList.add("mb-1","col-lg-5","col-md-4","col-sm-12", "palindromo")
             cuerpo.lastChild.textContent = `${formulario.value} es un palindromo`
             
         } else {
             //console.log(" este es el caso falso, debo agregar algo que diga que no es un palindromo")
             let nuevo = document.createElement("div")
-            nuevo.innerHTML= `Es un palindromo ${formulario.value}`
+            //nuevo.innerHTML= `Es un palindromo ${formulario.value}`
             cuerpo.appendChild(nuevo)
-            cuerpo.lastChild.classList.add("col-6", "noPalindromo")
+            cuerpo.lastChild.classList.add("mb-1","col-lg-5","col-md-4","col-sm-12","noPalindromo")
             cuerpo.lastChild.textContent = `${formulario.value} NO NO NO ES PALINDROMO`
         }
 
     }else{ alert("No ingreso ninguna palabra")}
 
     formulario.value = ""
+}
+
+function agregar2(){
+  let 
 }
 
 //prevenir default

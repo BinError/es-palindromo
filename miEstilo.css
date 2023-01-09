@@ -4,8 +4,13 @@
 
 .palindromo {
     background-color: greenyellow;
+    border:1px solid rgb(105, 24, 24);
+    border-radius: 15%;
 }
 
 .noPalindromo {
     background-color: rgb(255, 193, 47);
+    border:1px solid rgb(60, 91, 81);
+    border-radius: 15%;
 }
+
